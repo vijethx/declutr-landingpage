@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { FaTwitter } from "react-icons/fa";
 import Logo from "../public/Logo2.png";
 
 export default function Home() {
@@ -28,12 +29,17 @@ export default function Home() {
         <h1 className='font-[Sora] xl:text-[70px] text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-center mt-8'>
           Consume the internet better.
         </h1>
-        <button className='text-[#1D1134] font-[Sora] text-[14px] lg:text-[16px] bg-[#ED8F03] hover:bg-[#FCAA30] rounded-lg px-6 py-3 mt-8 '>
-          Follow on Twitter for updates
+        <button
+          className='text-[#1D1134] font-[Sora] text-[14px] lg:text-[16px] bg-[#ED8F03] hover:bg-[#FCAA30] rounded-lg px-6 py-3 mt-8 '
+          disabled>
+          Coming Soon
+        </button>
+
+        <button
+          onClick={() => window.open("https://twitter.com/declutr_", "_blank")}>
+          <FaTwitter className='h-6 w-6 text-[#1DA1F2] mt-8' />
         </button>
       </main>
-
-      <footer className=''></footer>
     </div>
   );
 }
