@@ -30,7 +30,7 @@ export default function Home() {
         </h1>
         <button
           className='text-[#1D1134] font-[Sora] text-[14px] lg:text-[16px] bg-[#ED8F03] hover:bg-[#FCAA30] rounded-lg px-6 py-3 mt-8 '
-          onClick={() => window.open("https://twitter.com/declutr_", "_blank")}>
+          onClick={() => window.open("https://twitter.com/declutrHQ", "_blank")}>
           Follow us on Twitter
         </button>
       </main>
